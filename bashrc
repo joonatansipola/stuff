@@ -5,7 +5,7 @@ HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
 PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 
-gget() {
+jsgget() {
         f=https://raw.githubusercontent.com/joonatansipola/stuff/master/$1
         wget $f
 }
