@@ -13,6 +13,7 @@ upstuff () {
 	git commit -m'upstuff upload'
 	git push
 	
+	echo
 	ls
 	cd $wd
 }
