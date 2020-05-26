@@ -1,0 +1,18 @@
+upstuff () {
+	
+	wd=$(pwd)
+	cd <LOCAL_REPO_PATH>
+	
+	fname=$(basename $1)
+	fpath=<FILE_BASE_PATH>/$1
+	
+	cp $fpath .
+	
+	git reset --
+	git add $fname
+	git commit -m'upstuff upload'
+	git push
+	
+	ls
+	cd $wd
+}
