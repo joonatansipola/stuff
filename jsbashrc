@@ -12,3 +12,5 @@ jsgget() {
         f=https://raw.githubusercontent.com/joonatansipola/stuff/master/$1
         wget $f
 }
+
+git config --global alias.graph "log --all --graph --decorate --oneline"
