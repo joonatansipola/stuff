@@ -1,5 +1,6 @@
 PS1='\[\033[01;34m\][\W] \[\033[01;32m\]€\[\033[00m\] '
 alias lsa="ls -alh"
+shopt -s globstar
 
 #HISTSIZE=1000
 #HISTFILESIZE=2000
