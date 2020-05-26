@@ -4,3 +4,8 @@ alias lsa="ls -alh"
 HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
 PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
+
+gget() {
+        f=https://raw.githubusercontent.com/joonatansipola/stuff/master/$1
+        wget $f
+}
