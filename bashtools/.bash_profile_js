@@ -49,7 +49,7 @@ gitup () {
 #        fname=$(basename $1)
 #        fpath=<FILE_BASE_PATH>/$1
 #
-#	cp $fpath $2/$fname
+#	cp -i $fpath $2/$fname
 #
 #	git reset --
 #	git add $2/$fname
