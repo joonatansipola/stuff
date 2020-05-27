@@ -9,7 +9,7 @@ fi
 
 # misc
 #PS1='\[\033[01;34m\][\W] \[\033[01;32m\]€\[\033[00m\] '
-alias lsa="ls -alh"
+alias lsa="ls -Alh"
 shopt -s globstar
 
 # history
