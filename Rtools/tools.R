@@ -40,3 +40,9 @@ triple.grep.idx <- function(pattern1, pattern2, pattern3, search.from)
 na.remove <- function(vec) {
   vec[!is.na(vec) & !is.nan(vec) & vec != "NaN"]
 }
+
+# return logical vector with NAs changed to FALSE
+na.false <- function(vec) {
+  vec[is.na(vec)]=F
+  vec
+}
