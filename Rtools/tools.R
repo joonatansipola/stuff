@@ -38,5 +38,5 @@ triple.grep.idx <- function(pattern1, pattern2, pattern3, search.from)
 
 # return vector without NAs or NaNs
 na.remove <- function(vec) {
-  vec[!is.na(vec) & !is.nan(vec)]
+  vec[!is.na(vec) & !is.nan(vec) & vec != "NaN"]
 }
